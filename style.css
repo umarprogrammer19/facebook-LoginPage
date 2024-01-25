@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.facebook-page{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #f0f2f5;
+}
+
+.facebook-page .container{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.container .textbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.textbox .logo{
+    font-size: 4rem;
+    color: #1877f2;
+}
+
+.textbox p{
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+    min-width: 400px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 25px;
+    width: 415px;
+    height: 325px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%) , 0 8px rgb(0 0 0 /10%);
+}
+
+form input{
+    border: 1px solid #dddfe2;
+    outline: none;
+    padding: 10px 16px;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+form input:focus{
+    border: 1.8px solid #1877f2;
+}
+
+form .login{
+    outline: none;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 6px;
+    background: #1877f2;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+form .login :hover{
+    cursor: pointer;
+}
+
+form a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: #1877f2;
+    padding-top: 15px;
+}
+
+form hr{
+    background: #f7f7f7;
+    margin: 1rem;
+}
+
+form .create-account{
+    overflow: none;
+    border: none;
+    background: #06b909;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+}
+
+form .create-account:hover{
+    cursor: pointer;
+}
+
+.login p{
+    margin-top: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.login span{
+    font-weight: 500;
+}
+
+@media (max-width: 820px){
+    html{
+        font-size: 75%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form{
+        width: 300px;
+        height: fit-content;
+    }
+
+    form .login{
+        font-size: 1.5rem;
+    }
+
+    form a{
+        font-size: 1.5rem;
+    }
+
+    form .create-account{
+        font-size: 1.2rem;
+    }
+
+    form input{
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .login p{
+        font-size: 1rem;
+    }
+}
